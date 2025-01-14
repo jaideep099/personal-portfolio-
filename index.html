@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a8339ba8c3.js" crossorigin="anonymous"></script>
+</head>
+<body> 
+<div id="header">
+    <div class="container">
+        <nav>
+             <!-- <img src="https://www.google.com/imgres?q=portfolio%20images%20black&imgurl=https%3A%2F%2Fcdn-icons-png.flaticon.com%2F512%2F726%2F726056.png&imgrefurl=https%3A%2F%2Fwww.flaticon.com%2Ffree-icon%2Fportfolio_726056&docid=QQEY2De1MDdfWM&tbnid=Pqi1fPtC9T6EqM&vet=12ahUKEwixisaojMGJAxVg4jgGHXOqBic4ChAzegQIRhAA..i&w=512&h=512&hcb=2&ved=2ahUKEwixisaojMGJAxVg4jgGHXOqBic4ChAzegQIRhAA" class="logo"> -->
+
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p><span>Full-Stack Developer</span></p>
+            <h1>Hi, I'm <span>Jaideep</span><br>Singh From India</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/aboutme.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello! I’m Jaideep Singh, a passionate web developer student with a keen interest in creating dynamic and responsive web applications. I enjoy transforming ideas into functional and visually appealing websites, using a combination of HTML, CSS, and JavaScript. Currently, I’m expanding my skills in frameworks like React and backend technologies.
+
+                    I love tackling challenges and learning new technologies to enhance my craft. When I'm not coding, you can find me exploring design trends or contributing to open-source projects. I believe in continuous learning and am excited about the endless possibilities in web development.
+                    
+                    Feel free to browse my portfolio to see my projects, and let’s connect!.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Development</span><br>Core web dev skills with frameworks and libraries. Familiarity with SQL and NoSQL(MongoDB)</li>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+             
+                        <li><span>DSA in Java</span><br>Strong and Proficient skills in logic building</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2024</span><br>Full-stack developer intern in Acwits</li>
+                        <li><span>2022 - 2023</span><br> Tech Team lead at Blotic</li>
+                
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2020-21</span><br>Shiksha Niketan Higher Secondary</li>
+                        <li><span>2021-25</span><br>Bharati Vidyapeeth College of Engineering,Pune</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<!-- <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>UI/UX Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/woork.jpeg">
+                <div class="layer">
+                    <h3>Blotic logo</h3>
+                    <p>Desgin the logo by UI/UX.Check the logo on </p>
+                    <a href="https://bloticbvucoep.netlify.app/"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/AdobeStock_315111521_Preview.jpeg">
+                <div class="layer">
+                    <h3> BookMyshow Application</h3>
+                    <p> Developed a dynamic and responsive user interface using React.js, incorporating state management with React Hooks
+                        and context API.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/img33.JPG">
+                <div class="layer">
+                    <h3>Blotic Website</h3>
+                    <p> Developed a dedicated section for Web3 learning resources, focusing on fundamentals and advanced concepts.</p>
+                    <a href="https://new--blotic.netlify.app/"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> jaideepsingh@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> 9086111099</p>
+                <div class="social-icons">
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/jaideep-singh-126a93258/"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/jaideep_singh_resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzpsbgFVOzLe4Ad7PBi6VWfcO2pLNpg28fDvAghkTEzSwkk6Mtf2rCU8Rf7cZg_j9J7cg/exec' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    // form.addEventListener('submit', e => {
+    //   e.preventDefault()
+    //   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    //     .then(response => {
+    //         msg.innerHTML = "Message sent successfully"
+    //         setTimeout(function(){
+    //             msg.innerHTML = ""
+    //         },5000)
+    //         form.reset()
+    //     })
+    //     .catch(error => console.error('Error!', error.message))
+    // })
+//     form.addEventListener('submit', e => {
+//     e.preventDefault();
+    
+//     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+//         .then(response => {
+//             if (!response.ok) {
+//                 throw new Error('Network response was not ok');
+//             }
+//             msg.innerHTML = "Message sent successfully";
+//             setTimeout(() => {
+//                 msg.innerHTML = "";
+//             }, 5000);
+//             form.reset();
+//         })
+//         .catch(error => {
+//             msg.innerHTML = "Error sending message. Please try again.";
+//             console.error('Error!', error.message);
+//         });
+// });
+form.addEventListener('submit', e => {
+    e.preventDefault();
+    
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            msg.innerHTML = "Message sent successfully";
+            // Create a button for the successful submission
+            const successButton = document.createElement('button');
+            successButton.innerHTML = "";
+            successButton.onclick = () => {
+                // Action to perform when the button is clicked
+                alert("Thank you for your submission!");
+                // Optionally, you can hide or remove the button after it's clicked
+                successButton.style.display = 'none';
+            };
+            msg.appendChild(successButton);
+
+            setTimeout(() => {
+                msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+        })
+        .catch(error => {
+            msg.innerHTML = "Error sending message. Please try again.";
+            console.error('Error!', error.message);
+        });
+});
+
+  </script>
+</body>
+</html>
