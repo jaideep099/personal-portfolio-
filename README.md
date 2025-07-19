@@ -62,10 +62,7 @@ cd portfolio-site
 
 - **Jaideep Singh**
 - [LinkedIn](https://www.linkedin.com/in/jaideep-singh-126a93258/)
-- [GitHub](https://github.com/your-username)
 
 ---
 
-## 📄 License
 
-This project is licensed under the **MIT License**.
